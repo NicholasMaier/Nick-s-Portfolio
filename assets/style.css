@@ -1,0 +1,176 @@
+:root {
+    --commoncolor: rgb(249, 31, 74);
+    --backgroundcolor: rgb(71, 66, 66);
+    --commonfont: monospace;
+}
+
+html {
+    background-color: var(--backgroundcolor);
+}
+
+h1 {
+    color: var(--commoncolor);
+    font-family: var(--commonfont);
+    font-size: 45px;
+    margin-left: 50px;
+}
+
+h1 , #photo-of-me {
+    display: inline-block;
+}
+
+nav {
+    background-color: var(--commoncolor);
+}
+
+h2 {
+    color: var(--backgroundcolor);
+    font-family: var(--commonfont);
+    font-size: 35px;
+}
+
+span {
+    font-size: 30px;
+}
+
+footer {
+    font-family: var(--commonfont);
+    background-color: var(--commoncolor);
+    height: 600px;
+    margin-top: 100px;
+    box-shadow: 0px 0px 15px 20px var(--commoncolor);
+}
+
+footer h2{
+    color: var(--backgroundcolor);
+    font-family: var(--commonfont);
+    margin-left: 50px;
+}
+
+footer form{
+    color: var(--backgroundcolor);
+    font-size: 20px;
+}
+
+footer h3 {
+    color: var(--backgroundcolor);
+    margin: 50px 0px 0px 50px ;
+    font-size: 25px;
+}
+
+footer p {
+    color: var(--backgroundcolor);
+    margin: 50px 0px 0px 50px ;
+    font-size: 20px;
+}
+
+#photo-of-me {
+    height: 100px;
+    border: 4px var(--commoncolor) solid;
+    float: right;
+}
+
+#top-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    box-shadow: 0px 10px 50px 10px var(--commoncolor);
+    margin-top: 50px;
+}
+
+#top-nav li{
+    color: var(--backgroundcolor);
+    font-family: var(--commonfont);
+    display: inline-block;
+    font-size: 35px;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+#about-me img, #about-me p{
+ display: inline-block;
+}
+
+#about-me p{
+    font-family: var(--commonfont);
+    font-size: 25px;
+    width: 45%;
+    text-align: center;
+    margin-left: 40px;
+}
+
+#photo-of-me2 {
+    width: 40%;
+    height: 90%;
+}
+
+#my-resume {
+    margin-left: auto;
+    margin-right: 0;
+    border-radius: 32px 0px 0px 32px;
+}
+
+#my-resume p{
+    font-family: var(--commonfont);
+    font-size: 25px;
+    text-align: center;
+}
+
+#contact-me-form {
+    margin-left: 50px;
+}
+
+.Card {
+    color: var(--commoncolor);
+    font-family: var(--commonfont);
+    display: inline-block;
+    width: 75%;
+    max-width: 600px;
+    border: 4px white dashed;
+    border-radius: 16px;
+    margin-top: 75px;
+    margin-left: 75px;
+    text-align: center;
+}
+
+.Card h2 {
+    color: var(--commoncolor);
+    background-color: var(--backgroundcolor);
+    width: 400px;
+    border: 4px white solid;
+    border-radius: 8px;
+    position: relative;
+    right: 30px;
+    bottom: 20px;
+}
+
+.picture-of-website {
+    width: 100%
+}
+
+.Card p {
+    display: none;
+    font-size: 20px;
+}
+
+.Rectangle {
+    background-color: var(--commoncolor);
+    color: var(--backgroundcolor);
+    width: 800px;
+    height: 400px;
+    margin-top: 75px;
+    border: 8px var(--commoncolor) solid;
+    border-radius: 0px 32px 32px 0px;
+    box-shadow: 0px 0px 20px 10px var(--commoncolor);
+}
+
+@media screen and (max-width: 800px) {
+    #top-nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #photo-of-me {
+        display: none;
+    }
+}

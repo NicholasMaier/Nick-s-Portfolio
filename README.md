@@ -1,1 +1,2 @@
-# Nick-s-Portfolio
+# Nicks-Portfolio
+This website is a demonstration of my current programming skills and a way to show those skills to employers. This website will be updated as I progess my career as a website developer. I hope you enjoy :)

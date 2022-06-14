@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/reset.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="./assets/script.js"></script>
+    <title>Nick's Portfolio</title>
+</head>
+
+<body>
+    
+    <header>
+
+        <h1>Nick Maier's Portfolio</h1>
+
+        <img id="photo-of-me"
+             src="./assets/images/photo-of-nick-maier.png" 
+             alt="photo-of-nick-maier"/>
+
+    </header>
+
+    <nav>
+
+        <ul id="top-nav">
+
+            <li><a href="#my-websites">My Websites</a></li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#my-resume">My Resume</a></li>
+            <li><a href="#contact-me">Contact Me</a></li>
+
+        </ul>
+
+    </nav>
+    
+    <main>
+
+        <div id="my-websites">
+        <section class="Card"
+                 id="website1"
+                 onclick="window.open('https://www.youtube.com/')"
+                 onmouseenter="showCardParagraph1()" 
+                 onmouseleave="hideCardParagraph1()">
+
+            <h2 id="website1Title"
+                onmouseenter="changeWebsite1Title()"
+                onmouseleave="revertWebsite1Title()">
+                YouTube
+            </h2>
+            <img class="picture-of-website"
+                 src="./assets/images/picture-of-youtube.png"
+                 alt="picture-of-youtube-home-page"/>
+            <p id="cardPara1"><span>Website Description:</span><br>
+                This is "totally" one of my websites unless your going to sue me in that case its not :)
+            </p>
+
+        </section>
+
+        <section class="Card"
+                 id="website2"
+                 onclick="window.open('https://www.google.com/')"
+                 onmouseenter="showCardParagraph2()"
+                 onmouseleave="hideCardParagraph2()">
+
+            <h2 id="website2Title"
+                onmouseenter="changeWebsite2Title()"
+                onmouseleave="revertWebsite2Title()"> 
+                Google
+            </h2>
+            <img class="picture-of-website"
+                 src="./assets/images/picture-of-google.png"
+                 alt="picture-of-youtube-home-page"/>
+            <p id="cardPara2"><span>Website Description:</span><br>
+                This is "totally" one of my websites unless your going to sue me in that case its not :)
+            </p>
+
+        </section>
+
+        <section class="Card"
+                 id="website3" 
+                 onclick="window.open('https://www.netflix.com/')"
+                 onmouseenter="showCardParagraph3()" 
+                 onmouseleave="hideCardParagraph3()">
+
+            <h2 id="website3Title"
+                onmouseenter="changeWebsite3Title()"
+                onmouseleave="revertWebsite3Title()">
+                Netflix
+            </h2>
+            <img class="picture-of-website"
+                 src="./assets/images/picture-of-netflix.png"
+                 alt="picture-of-netflix-home-page"/>
+            <p id="cardPara3"><span>Website Description:</span><br>
+                This is "totally" one of my websites unless your going to sue me in that case its not :)
+            </p>
+
+        </section>
+
+        <section class="Card" 
+                 id="website4" 
+                 onclick="window.open('https://www.tekmgmt.com/')"
+                 onmouseenter="showCardParagraph4()" 
+                 onmouseleave="hideCardParagraph4()">
+
+            <h2 id="website4Title"
+                onmouseenter="changeWebsite4Title()"
+                onmouseleave="revertWebsite4Title()">
+                Tekmgmt
+            </h2>
+            <img class="picture-of-website"
+                 src="./assets/images/picture-of-technology-management.png"
+                 alt="picture-of-technology-management-home-page"/>
+            <p id="cardPara4"><span>Website Description:</span><br>
+                This is "totally" one of my websites unless your going to sue me in that case its not :)
+            </p>
+
+        </section>
+        </div>
+
+        <section id="about-me" class="Rectangle">
+            <h2>About Me</h2>
+            <img id="photo-of-me2" src="./assets/images/photo-of-nick-maier2.png">
+            <p>Hello im Nick Maier I was born on July 17th 2002 in Pittsburgh PA. I know how to program in html, css, and javascript and have been programming for around 7 months.</p>
+        </section>
+
+        <section id="my-resume" class="Rectangle">
+            <h2>My Resume</h2>
+            <p>I have experience in html, css, and javascript which I learned from my classes at University of Pennsylvianna. I have had multiple previous jobs as anything from working in fast food service to working as an IT technician.</p>
+        </section>
+
+    </main>
+
+</body>
+
+<footer>
+
+    <section id="contact-me">
+        <h2>Contact Me</h2>
+        <form id="contact-me-form" action="/action_page.php" method="get">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname">
+            <br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname">
+            <br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+        <h3>Phone Number</h3>
+        <p>1-800-Not-My-Real-Phone-Number</p>
+        <h3>Email</h3>
+        <p>NotMyRealEmail@FakeEmail.com</p>
+        
+</footer>
+
+</html>
